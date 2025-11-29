@@ -14,6 +14,7 @@ export default defineConfig({
         './Input': './src/components/atoms/Input',
         './Label': './src/components/atoms/Label',
         './FormField': './src/components/molecules/FormField',
+        './ConfirmDialog': './src/components/molecules/ConfirmDialog',
         './UserForm': './src/components/organisms/UserForm',
         './UserCard': './src/components/organisms/UserCard',
       },

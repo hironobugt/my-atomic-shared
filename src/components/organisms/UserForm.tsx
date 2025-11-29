@@ -43,7 +43,7 @@ export const UserForm: React.FC<UserFormProps> = ({
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form onSubmit={handleSubmit} method="post" className="space-y-4">
       <FormField
         label="ユーザー名"
         name="username"

@@ -12,6 +12,9 @@ export type { LabelProps } from './atoms/Label';
 export { FormField } from './molecules/FormField';
 export type { FormFieldProps } from './molecules/FormField';
 
+export { ConfirmDialog } from './molecules/ConfirmDialog';
+export type { ConfirmDialogProps } from './molecules/ConfirmDialog';
+
 // Organisms
 export { UserForm } from './organisms/UserForm';
 export type { UserFormProps, UserFormValues } from './organisms/UserForm';
