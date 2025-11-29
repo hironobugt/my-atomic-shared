@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: 'atomic-shared',
+      name: 'atomicShared',
       filename: 'remoteEntry.js',
       exposes: {
         './Button': './src/components/atoms/Button',
@@ -29,8 +29,10 @@ export default defineConfig({
   },
   server: {
     port: 5001,
+    cors: true,
   },
   preview: {
     port: 5001,
+    cors: true,
   },
 })
