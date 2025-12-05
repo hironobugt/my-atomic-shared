@@ -6,12 +6,13 @@ export interface FormFieldProps {
   label: string;
   name: string;
   type?: 'text' | 'email' | 'password';
-  value: string;
-  onChange: (value: string) => void;
+  value?: string;
+  onChange?: (value: string) => void;
   error?: string;
   required?: boolean;
   placeholder?: string;
   disabled?: boolean;
+  defaultValue?: string;
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
@@ -24,6 +25,7 @@ export const FormField: React.FC<FormFieldProps> = ({
   required = false,
   placeholder,
   disabled = false,
+  defaultValue,
 }) => {
   return (
     <div className="mb-4">
@@ -39,6 +41,7 @@ export const FormField: React.FC<FormFieldProps> = ({
         placeholder={placeholder}
         disabled={disabled}
         error={error}
+        defaultValue={defaultValue}
       />
       {error && (
         <p className="mt-1 text-sm text-red-600">{error}</p>
